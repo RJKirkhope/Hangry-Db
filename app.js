@@ -2,11 +2,11 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 
-const routes = require("./restaurant-list");
+const routes = require("./restaurant_list");
 
 app.use(bodyParser.json());
 
-app.use("/restaurant-list", routes);
+app.use("/restaurant_list", routes);
 
 // catch 404 and forward to error handler
 app.use((request, response, next) => {
